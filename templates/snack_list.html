@@ -6,7 +6,7 @@
 <ul>
   {% for snack in object_list %}
   <li>
-    <a href="{% url 'snack_detail' snack.pk %}">{{ Snack.name }}</a>
+    <a href="{% url 'snack_detail' snack.pk %}">{{ snack.name }}</a>
   </li>
   {% endfor %}
 </ul>
