@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<h2>Details about {{ snacks.name }}</h2>
-<h2>purchaser: {{ snacks.purchaser }}</h2>
+<h2>Name  {{ snacks.name }}</h2>
+<h2>Purchaser: {{ snacks.purchaser }}</h2>
 <p>{{ snacks.description }}</p>
 <a href="{% url 'snack_update' snacks.pk %}">+ Update snack</a>
 <a href="{% url 'snack_delete' snacks.pk %}">+ Delete snack</a>
